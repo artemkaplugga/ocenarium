@@ -6,13 +6,15 @@
 
 .swiper-container {
     position: relative;
-    padding: 20px 0;
+    padding: 20px 40px;
+    overflow: hidden;
 }
 
 .swiper-wrapper {
     display: flex;
     flex-wrap: nowrap;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: visible;
 }
 
 .slider-card {
