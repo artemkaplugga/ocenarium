@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oceanarium</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="hero">
+        <div class="container">
+            <div class="nav">
+                <ul class="nav-links">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                </ul>
+                <a href="index.html">
+                    <img src="images/components/2d-logo.svg" alt="AQUAFORM" class="logo">
+                  </a>
+                <ul class="nav-links">
+                    <li><a href="price.html">Цены и расписания</a></li>
+                    <li><a href="place.html">Как нас найти</a></li>
+                </ul>
+                <div class="burger" id="burger">&#9776;</div>
+            </div>
+
+            <div class="hero-content">
+                <h1>AQUAFORM</h1>
+                <button class="cta-btn">КУПИТЬ БИЛЕТ</button>
+            </div>
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-header">
+                <img src="images/components/2d-logo.svg" alt="AQUAFORM" class="logo" width="110">
+                <div class="close-btn" id="closeBtn">&times;</div>
+            </div>
+            <div class="mobile-menu-links">
+                <a href="index.html">Главная</a>
+                <a href="about.html">О нас</a>
+                <a href="news.html">Новости</a>
+                <a href="price.html">Цены и расписания</a>
+                <a href="place.html">Как нас найти</a>
+            </div>
+        </div>
+
+    </header>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <svg class="close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30">
+                <path d="M18 6L6 18M6 6l12 12" stroke="white" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+            <h2>Оформить покупку билета</h2>
+            <p>Позвоните или оставьте номер, мы вам перезвоним: 8-800-555-35-35 или 8-918-962-62-63</p>
+            <form id="contactForm">
+                <input type="text" placeholder="Ваше имя*" required><br>
+                <input type="tel" placeholder="Контактный телефон*" required><br>
+                <div class="form-footer">
+                    <button type="submit">Отправить</button>
+                    <label class="custom-checkbox">
+                        <input type="checkbox" id="robotCheckbox">
+                        <span class="checkmark"></span>
+                        Я не робот
+                    </label>
+                </div>
+                <p id="checkboxError">Пожалуйста, подтвердите, что вы не робот</p>
+            </form>
+        </div>
+    </div>
+    <div class="container">
+        <h1 class="price__title">Цены и расписание</h1>
+        <h1 class="price__subtitle">Цены</h1>
+        <div class="price-category">
+            <div class="price-item">
+                <span class="price-description">До 3-х лет включительно....................Бесплатно</span>
+            </div>
+            <div class="price-item">
+                <span class="price-description">
+                    От 4-13 лет..............................................600 руб</span>
+            </div>
+            <div class="price-item">
+                <span class="price-description">От 14 лет.................................................800 руб</span>
+            </div>
+            <div class="price-item">
+                <span class="price-description">Инвалиды II и III групп..........................350 руб</span>
+            </div>
+            <div class="price-item">
+                <span class="price-description">Ветераны боевых действий.....................350 руб</span>
+            </div>
+            <div class="price-item">
+                <span class="price-description">Ветераны трудa.......................................350 руб</span>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h2 class="price__subtitle">Бесплатное посещение:</h2>
+        <ul class="price-description">
+            <li>Ветераны и инвалиды ВОВ</li>
+            <li>Воспитанники интернатов и детских домов</li>
+            <li>Инвалиды I группы</li>
+            <li>Дети-инвалиды</li>
+        </ul>
+        <h2 class="price__subtitle">Групповые посещения (от 20 человек)</h2>
+        <div class="price-item">
+            <span class="price-description">Детский билет.......................................400 руб</span>
+        </div>
+        <div class="special-offer">
+            <h2 class="price__subtitle">Специальные предложения:</h2>
+            <h3>Единый развлекательный билет (океанариум + вертикальный лабиринт)</h3>
+            <div class="price-item">
+                <span class="price-description">Детский билет.......................................750 руб</span>
+            </div>
+            <div class="price-item">
+                <span class="price-description">От 14 лет...............................................950 руб</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1 class="price__title">Расписание</h1>
+        <div class="group">
+
+            <div class="schedule-day">
+                <div class="day-title">Будние дни</div>
+                <ul class="schedule__inner">
+                    <li>
+                        <span class="day-time">13:00</span>
+                        Кормление пираний
+                    </li>
+                    <li>
+                        <span class="day-time">13:30</span>
+                        Кормление кубинских крокодилов
+                    </li>
+                    <li>
+                        <span class="day-time">14:00</span>
+                        Погружение аквалангиста (кроме понедельника)
+                    </li>
+                    <li>
+                        <span class="day-time">15:00</span>
+                        Кормление сантехнического червячка (по средам кормление акул)
+                    </li>
+                    <li>
+                        <span class="day-time">16:00</span>
+                        Погружение аквалангиста: кормление коралловых рыбок
+                    </li>
+                    <li>
+                        <span class="day-time">17:00</span>
+                        Кормление рыб осетровых пород
+                    </li>
+                </ul>
+            </div>
+            <div class="schedule-day_weekend">
+                <div class="day-title">Выходные дни</div>
+                <ul class="schedule__inner">
+                    <li>
+                        <span class="day-time">11:00</span>
+                        Погружение аквалангиста: кормление морских бабочек
+                    </li>
+                    <li>
+                        <span class="day-time">12:00</span>
+                        Погружение аквалангиста: кормление морских обитателей
+                    </li>
+                    <li>
+                        <span class="day-time">12:40</span>
+                        Кормление экзотических рыб
+                    </li>
+                    <li>
+                        <span class="day-time">13:00</span>
+                        Погружение аквалангиста: кормление коралловых рыб
+                    </li>
+                    <li>
+                        <span class="day-time">13:40</span>
+                        Кормление бурых паку
+                    </li>
+                    <li>
+                        <span class="day-time">14:00</span>
+                        Погружение аквалангиста
+                    </li>
+                    <li>
+                        <span class="day-time">15:00</span>
+                        Кормление акул
+                    </li>
+                    <li>
+                        <span class="day-time">15:30</span>
+                        Погружение аквалангиста: кормление карангов
+                    </li>
+                    <li>
+                        <span class="day-time">16:30</span>
+                        Кормление пираний
+                    </li>
+                    <li>
+                        <span class="day-time">17:00</span>
+                        Погружение аквалангиста: кормление морских бабочек
+                    </li>
+                    <li>
+                        <span class="day-time">18:00</span>
+                        Кормление рыб осетровых пород
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+
+    <footer style="background: linear-gradient(135deg, #1359a3fc, #021724);">
+        <div class="footer-container">
+            <div class="footer-nav">
+                <a href="index.html">Главная</a>
+                <a href="about.html">О нас</a>
+                <a href="news.html">Новости</a>
+                <a href="place.html">Как нас найти</a>
+                <a href="price.html">Цены и расписание</a>
+            </div>
+            <img src="images/components/logo-cb.svg" alt="logo-cb">
+            <div class="footer-contacts">
+                <p>Контактная информация:</p>
+                <p>8-800-555-35-35</p>
+                <p>8-918-962-62-63</p>
+                <div class="social__links">
+                    <img src="images/components/tg.svg" alt="tg" width="104" height="71">
+                    <img src="images/components/vk.svg" alt="vk" width="71" height="71">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
+<script src="js/index.js"></script>

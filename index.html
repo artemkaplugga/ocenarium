@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oceanarium</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="hero">
+    <div class="container">
+      <div class="nav">
+        <ul class="nav-links">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a href="news.html">Новости</a></li>
+        </ul>
+        <a href="index.html">
+        <img src="images/components/2d-logo.svg" alt="AQUAFORM" class="logo">
+      </a>
+        <ul class="nav-links">
+          <li><a href="price.html">Цены и расписания</a></li>
+          <li><a href="place.html">Как нас найти</a></li>
+        </ul>
+        <div class="burger" id="burger">&#9776;</div>
+      </div>
+
+      <div class="hero-content">
+        <h1>AQUAFORM</h1>
+        <button class="cta-btn">КУПИТЬ БИЛЕТ</button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu-header">
+        <img src="images/components/2d-logo.svg" alt="AQUAFORM" class="logo" width="110">
+        <div class="close-btn" id="closeBtn">&times;</div>
+      </div>
+      <div class="mobile-menu-links">
+        <a href="index.html">Главная</a>
+        <a href="about.html">О нас</a>
+        <a href="news.html">Новости</a>
+        <a href="price.html">Цены и расписания</a>
+        <a href="place.html">Как нас найти</a>
+      </div>
+    </div>
+  </header>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <svg class="close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30">
+        <path d="M18 6L6 18M6 6l12 12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+      <h2>Оформить покупку билета</h2>
+      <p>Позвоните или оставьте номер, мы вам перезвоним: 8-800-555-35-35 или 8-918-962-62-63</p>
+      <form id="contactForm">
+        <input type="text" placeholder="Ваше имя*" required><br>
+        <input type="tel" placeholder="Контактный телефон*" required><br>
+        <div class="form-footer">
+          <button type="submit">Отправить</button>
+          <label class="custom-checkbox">
+            <input type="checkbox" id="robotCheckbox">
+            <span class="checkmark"></span>
+            Я не робот
+          </label>
+        </div>
+        <p id="checkboxError">Пожалуйста, подтвердите, что вы не робот</p>
+      </form>
+    </div>
+  </div>
+  <div class="container">
+    <section class="swiper-container slider-section">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slider-card">
+          <img src="./images/index/photosession.webp" alt="Фотосессия" width="416" height="330">
+          <h3>Фотосессия</h3>
+          <p>Услуги профессионального фотографа с морскими животными или на фоне декораций океанариума.</p>
+          <p class="slider-more"><a href="index-more.html">Подробнее</a></p>
+        </div>
+        <div class="swiper-slide slider-card">
+          <img src="./images/index/cafe.webp" alt="Кафе" width="416" height="330">
+          <h3>Кафе и ресторан</h3>
+          <p>Питание на территории океанариума с тематическим оформлением.</p>
+          <p class="slider-more"><a href="index-more.html">Подробнее</a></p>
+        </div>
+        <div class="swiper-slide slider-card">
+          <img src="./images/index/interactive.webp" alt="Интерактив" width="416" height="330">
+          <h3>Интерактивные зоны</h3>
+          <p>возможность потрогать некоторых морских обитателей под присмотром персонала.</p>
+          <p class="slider-more"><a href="index-more.html">Подробнее</a></p>
+        </div>
+        <div class="swiper-slide slider-card">
+          <img src="./images/index/gift-shop.webp" alt="Сувениры" width="416" height="330">
+          <h3>Сувенирный магазин</h3>
+          <p>Продажа сувениров, игрушек, книг и других товаров, связанных с морской тематикой.</p>
+          <p class="slider-more"><a href="index-more.html">Подробнее</a></p>
+        </div>
+        <div class="swiper-slide slider-card">
+          <img src="./images/index/divind.webp" alt="Дайвинг" width="416" height="330">
+          <h3>Дайвинг и снорклинг</h3>
+          <p>возможность поплавать с аквалангом или маской и трубкой в специально оборудованных бассейнах с морскими
+            животными.</p>
+          <p class="slider-more"><a href="index-more.html">Подробнее</a></p>
+        </div>
+        <div class="swiper-slide slider-card">
+          <img src="./images/index/feeding.webp" alt="Кормление" width="416" height="330">
+          <h3>Кормление рыб</h3>
+          <p> Посетители могут самостоятельно покормить рыб в одном из аквариумов.</p>
+          <p class="slider-more"><a href="index-more.html">Подробнее</a></p>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </section>
+  </div>
+
+  <div class="container">
+    <video class="banner" autoplay muted loop playsinline>
+      <source src="./images/index/banner.mp4" type="video/mp4">
+      Ваш браузер не поддерживает видео.
+    </video>
+  </div>
+  <section class="creatures">
+    <div class="container">
+      <h2>Наши обитатели</h2>
+      <p>Только в самарском океанариуме вы можете увидеть редкие виды <br> рыб и краснокнижных животных, таких как
+        азиатскую
+        аравану,<br> индийского ножа альбиноса, краснокнижных пингвинов Гумбольдта,<br> кубинских крокодилов и редчайший
+        вид
+        гладкошерстных выдр</p>
+      <div class="creatures-grid">
+        <a href="index-obitateli-more.html" class="creature-item">
+          <img src="./images/index/winged fish.webp" alt="Рыбка-клоун" width="165" height="195">
+          <p>Рыбка-крылатка</p>
+        </a>
+        <a href="index-obitateli-more.html" class="creature-item">
+          <img src="./images/index/penguin.webp" alt="Пингвин" width="160" height="195">
+          <p>Пингвин Гумбольдта</p>
+        </a>
+        <a href="index-obitateli-more.html" class="creature-item">
+          <img src="./images/index/seal.webp" alt="Ларга" width="160" height="195">
+          <p>Ларга</p>
+        </a>
+        <a href="index-obitateli-more.html" class="creature-item">
+          <img src="./images/index/crocodile.webp" alt="Крокодил" width="160" height="195">
+          <p>Кубинский крокодил</p>
+        </a>
+        <a href="index-obitateli-more.html" class="creature-item">
+          <img src="./images/index/blue shark.webp" alt="Акула" width="160" height="195">
+          <p>Голубая акула</p>
+        </a>
+        <a href="index-obitateli-more.html" class="creature-item">
+          <img src="./images/index/span-white.webp" alt="Лебедь белый" width="160" height="195">
+          <p>Лебедь белый</p>
+        </a>
+        <a href="index-obitateli-more.html" class="creature-item">
+          <img src="./images/index/yellowFox.webp" alt="Лисица жёлтая(ЛО)" width="160" height="195">
+          <p>Лисица жёлтая(ЛО)</p>
+        </a>
+        <a href="index-obitateli-more.html" class="creature-item">
+          <img src="./images/index/pig-winged-turtle.webp" alt="Свинорылая черепаха" width="160" height="195">
+          <p>Свинорылая черепаха</p>
+        </a>
+        <a href="index-obitateli-more.html" class="creature-item">
+          <img src="./images/index/parrot-fish.webp" alt="Рыба попугай" width="160" height="195">
+          <p>Рыба попугай</p>
+        </a>
+        <a href="index-obitateli-more.html" class="creature-item">
+          <img src="./images/index/frontoza.webp" alt="Фронтоза" width="160" height="195">
+          <p>Фронтоза</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="content">
+    <div class="container">
+      <div class="content__inner">
+        <div class="content__text">
+          <h2>Почему стоит посетить наш <span style="color:#0954A9">океанариум</span></h2>
+          <p>Здесь всё удивительно и опасно: безжалостные акулы, скаты-хвостоколы и еще много интересного и нового!</p>
+          <p>Вас порадует наша дарта своими забавными играми и, будьте внимательны, мы приготовили для Вас ещё много
+            сюрпризов</p>
+        </div>
+        <img src="./images/index/shark.webp" class="shark-img" alt="Акула" width="494" height="418">
+      </div>
+    </div>
+  </div>
+
+  <footer style="background: linear-gradient(135deg, #1359a3fc, #021724);">
+    <div class="footer-container">
+      <div class="footer-nav">
+        <a href="index.html">Главная</a>
+        <a href="about.html">О нас</a>
+        <a href="news.html">Новости</a>
+        <a href="place.html">Как нас найти</a>
+        <a href="price.html">Цены и расписание</a>
+      </div>
+      <img src="images/components/logo-cb.svg" alt="logo-cb">
+      <div class="footer-contacts">
+        <p>Контактная информация:</p>
+        <a href="tel:8-800-555-35-35">8-800-555-35-35</a>
+        <a href="tel:8-918-962-62-63">8-918-962-62-63</a>
+        <div class="social__links">
+          <img src="images/components/tg.svg" alt="tg" width="104" height="71">
+          <img src="images/components/vk.svg" alt="vk" width="71" height="71">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>

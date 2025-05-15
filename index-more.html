@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oceanarium</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+
+<body>
+    <header class="hero">
+        <div class="container">
+            <div class="nav">
+                <ul class="nav-links">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                </ul>
+                <a href="index.html">
+                    <img src="images/components/2d-logo.svg" alt="AQUAFORM" class="logo">
+                  </a>
+                <ul class="nav-links">
+                    <li><a href="price.html">Цены и расписания</a></li>
+                    <li><a href="place.html">Как нас найти</a></li>
+                </ul>
+                <div class="burger" id="burger">&#9776;</div>
+            </div>
+
+            <div class="hero-content">
+                <h1>AQUAFORM</h1>
+                <button class="cta-btn">КУПИТЬ БИЛЕТ</button>
+            </div>
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-header">
+                <img src="images/components/2d-logo.svg" alt="AQUAFORM" class="logo" width="110">
+                <div class="close-btn" id="closeBtn">&times;</div>
+            </div>
+            <div class="mobile-menu-links">
+                <a href="index.html">Главная</a>
+                <a href="about.html">О нас</a>
+                <a href="news.html">Новости</a>
+                <a href="price.html">Цены и расписания</a>
+                <a href="place.html">Как нас найти</a>
+            </div>
+        </div>
+    </header>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <svg class="close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30">
+                <path d="M18 6L6 18M6 6l12 12" stroke="white" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+            <h2>Оформить покупку билета</h2>
+            <p>Позвоните или оставьте номер, мы вам перезвоним: 8-800-555-35-35 или 8-918-962-62-63</p>
+            <form id="contactForm">
+                <input type="text" placeholder="Ваше имя*" required><br>
+                <input type="tel" placeholder="Контактный телефон*" required><br>
+                <div class="form-footer">
+                    <button type="submit">Отправить</button>
+                    <label class="custom-checkbox">
+                        <input type="checkbox" id="robotCheckbox">
+                        <span class="checkmark"></span>
+                        Я не робот
+                    </label>
+                </div>
+                <p id="checkboxError">Пожалуйста, подтвердите, что вы не робот</p>
+            </form>
+        </div>
+    </div>
+    <div class="container">
+        <h1 class="more__title">Магазин сувениров</h1>
+        <h2 class="more__subtitle">Магазин морских сувениров</h2>
+        <div class="more__inner">
+            <div class="model-wrapper">
+                <model-viewer src="images/index/TheLegendUnt.gltf" alt="logo" auto-rotate camera-controls
+                    shadow-intensity="0" environment-image="neutral"></model-viewer>
+            </div>
+            <div>
+                <p>
+                    В нашем магазине вы можете приобрести морские сувениры на память о посещении Океанариума, а также
+                    оригинальные подарки своим друзьям и близким.
+                </p>
+                <p>
+                    Магазин «Морские сувениры» уникален своим богатым ассортиментом на морскую тему. Здесь представлена
+                    большая коллекция морских раковин со всех морей и океанов, разнообразных форм и размеров.
+                </p>
+                <p>
+                    Огромный выбор изделий из керамики, фарфора, художественного стекла, мягких игрушек и товаров для
+                    детей порадует как взрослых, так и самых маленьких посетителей.
+                </p>
+                <p>
+                    В нашем магазине «Морские сувениры» вы всегда сможете выбрать себе покупку по душе!
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="more__img">
+            <img src="./images/index/more1.webp" alt="more1" width="581" height="388">
+            <img src="./images/index/more2.webp" alt="more2" width="581" height="388">
+        </div>
+    </div>
+
+    <footer style="background: linear-gradient(135deg, #1359a3fc, #021724);">
+        <div class="footer-container">
+            <div class="footer-nav">
+                <a href="index.html">Главная</a>
+                <a href="about.html">О нас</a>
+                <a href="news.html">Новости</a>
+                <a href="place.html">Как нас найти</a>
+                <a href="price.html">Цены и расписание</a>
+            </div>
+            <img src="./images/components/logo-cb.svg" alt="logo-cb">
+            <div class="footer-contacts">
+                <p>Контактная информация:</p>
+                <p>8-800-555-35-35</p>
+                <p>8-918-962-62-63</p>
+                <div class="social__links">
+                    <img src="./images/components/tg.svg" alt="tg" width="104" height="71">
+                    <img src="./images/components/vk.svg" alt="vk" width="71" height="71">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
+<script src="js/index.js"></script>

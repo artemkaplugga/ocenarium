@@ -1,0 +1,62 @@
+.about__section {
+    background: url("../images/about/about-fon.webp") no-repeat center center;
+    background-size: cover;
+    padding: 40px 0;
+    margin: 10px 0 50px;
+}
+
+.about__plan {
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.about__title-plan {
+    display: flex;
+    justify-content: center;
+    font-size: 48px;
+    font-weight: 400;
+    margin: 0;
+}
+
+@media (max-width:995px) {
+    .about__plan {
+        width: 800px;
+        height: 1180px;
+    }
+}
+
+@media (max-width:860px){
+    .about__plan {
+        width: 700px;
+        height: 1080px;
+    }
+}
+
+@media (max-width:740px){
+    .about__plan {
+        width: 600px;
+        height: 880px;
+    }
+
+    .about__title-plan {
+        font-size: 35px;
+    }
+}
+
+@media (max-width:645px){
+    .about__plan {
+        width: 500px;
+        height: 680px;
+    }
+}
+
+@media (max-width:540px){
+    .about__plan {
+        width: 350px;
+        height: 450px;
+    }
+
+    .about__title-plan {
+        font-size: 31px;
+    }
+}

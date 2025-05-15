@@ -1,0 +1,114 @@
+.price__title {
+    display: flex;
+    justify-content: center;
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.price__subtitle {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+    font-weight: 400;
+}
+.group{
+    display: flex;
+    gap: 60px;
+}
+
+.special-offer h3 {
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.day-title {
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+.price__title {
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.price-category {
+    font-size: 24px;
+}
+
+.price-description {
+    font-size: 24px;
+}
+
+.schedule__inner li {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    align-items: start;
+    font-size: 24px;
+}
+
+.schedule-day_weekend {
+    margin-bottom: 150px;
+}
+
+@media (max-width: 950px) {
+    .price__title {
+        font-size: 46px;
+        margin-bottom: 70px;
+    }
+
+    .price__subtitle {
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 787px) {
+    .price-description,
+    .schedule__inner li {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 700px) {
+    .price__subtitle {
+        font-size: 32px;
+    }
+
+    .price-description,
+    .schedule__inner li {
+        font-size: 18px;
+    }
+
+    .price__title {
+        margin-bottom: 60px;
+        font-size: 46px;
+    }
+
+    .special-offer h3 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 580px) {
+
+    .price-description,
+    .schedule__inner li {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 403px) {
+    .price__title {
+        font-size: 40px;
+    }
+
+    .special-offer h3 {
+        font-size: 25px;
+    }
+}

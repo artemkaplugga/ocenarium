@@ -1,0 +1,25 @@
+@import 'css/basic/_reset.css';
+@import 'css/basic/_global.css';
+
+@import 'css/index/_banner.css';
+@import 'css/index/_content.css';
+@import 'css/index/_creature.css';
+@import 'css/index/_slider.css';
+
+@import 'css/_price.css';
+@import 'css/_place.css';
+
+
+@import 'css/about/_about.css';
+@import 'css/about/_plan.css';
+@import 'css/about/_reviews.css';
+
+
+@import 'css/components/_header.css';
+@import 'css/components/_footer.css';
+
+@import 'css/vendor/_fonts.css';
+@import 'css/vendor/_vars.css';
+
+@import 'css/_news.css'
+

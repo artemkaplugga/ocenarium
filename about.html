@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oceanarium</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="hero">
+        <div class="container">
+            <div class="nav">
+                <ul class="nav-links">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                </ul>
+                <a href="index.html">
+                    <img src="images/components/2d-logo.svg" alt="AQUAFORM" class="logo">
+                  </a>
+                <ul class="nav-links">
+                    <li><a href="price.html">Цены и расписания</a></li>
+                    <li><a href="place.html">Как нас найти</a></li>
+                </ul>
+                <div class="burger" id="burger">&#9776;</div>
+            </div>
+
+            <div class="hero-content">
+                <h1>AQUAFORM</h1>
+                <button class="cta-btn">КУПИТЬ БИЛЕТ</button>
+            </div>
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-header">
+                <img src="images/components/2d-logo.svg" alt="AQUAFORM" class="logo" width="110">
+                <div class="close-btn" id="closeBtn">&times;</div>
+            </div>
+            <div class="mobile-menu-links">
+                <a href="index.html">Главная</a>
+                <a href="about.html">О нас</a>
+                <a href="news.html">Новости</a>
+                <a href="price.html">Цены и расписания</a>
+                <a href="place.html">Как нас найти</a>
+            </div>
+        </div>
+
+    </header>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <svg class="close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30">
+                <path d="M18 6L6 18M6 6l12 12" stroke="white" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+            <h2>Оформить покупку билета</h2>
+            <p>Позвоните или оставьте номер, мы вам перезвоним: 8-800-555-35-35 или 8-918-962-62-63</p>
+            <form id="contactForm">
+                <input type="text" placeholder="Ваше имя*" required><br>
+                <input type="tel" placeholder="Контактный телефон*" required><br>
+                <div class="form-footer">
+                    <button type="submit">Отправить</button>
+                    <label class="custom-checkbox">
+                        <input type="checkbox" id="robotCheckbox">
+                        <span class="checkmark"></span>
+                        Я не робот
+                    </label>
+                </div>
+                <p id="checkboxError">Пожалуйста, подтвердите, что вы не робот</p>
+            </form>
+        </div>
+    </div>
+<div class="container">
+        <h1 class="about__title">О нас</h1>
+        <video class="about__video" autoplay muted loop playsinline>
+            <source src="./images/index/video.mp4" type="video/mp4">
+            Ваш браузер не поддерживает видео.
+        </video>
+        <div class="about__inner">
+            <p class="about__text">AQUAFORM  – это своеобразный «подводный музей» с живыми экспонатами – обитателями
+                водной среды.
+                Располагается в торгово-развлекательном комплексе «Планета Нептун» по адресу ул. Марата, д.
+                86.<br><br>Идея
+                создания Океанариума принадлежит руководству АО «Рубин», а реализована она финским архитектором Хану
+                Лайтила. Открытие Океанариума состоялось 27 апреля 2006 года.
+            </p>
+            <div class="about__images">
+                <img src="./images/about/fish1.webp" class="about__image" alt="Картинка" width="300" height="272">
+                <img src="./images/about/fish2.webp" class="about__image" alt="Картинка" width="300" height="272">
+                <img src="./images/about/fish3.webp" class="about__image" alt="Картинка" width="300" height="272">
+            </div>
+            <p class="about__text">Общяя площадь Океанариума 5000м2. Здесь расположены 60 аквариумов ёмкостью от 10 до
+                750 тысяч литров воды.  В самом большом аквариуме установлен подводный тоннель с движущейся дорожкой
+                длиной 35 метров. Глубина этого аквариума составляет от 3 до 5 метров, а толщина акрилового стекла – 8
+                см.<br><br>Уникальная живая экспозиция Океанариума позволяет продемонстрировать всю красоту и сложность
+                устройства подводного мира – коллекция содержит более 2 тысяч экземпляров пресноводных и морских рыб,
+                водных беспозвоночных, млекопитающих, относящихся к более 200 видам.<br><br>Здесь очень душевно можно
+                провести
+                несколько часов, наблюдая за обитателями подводного мира.Разноцветные рыбы, яркие лягушки, неподвижные
+                скаты и грациозные акулы успокоят своей безмятежностью, а неуклюжие тюлени и любопытные мордочки
+                азиатских выдр заставят улыбнуться от умиления!<br><br>Экспозиции постоянно обновляются, поэтому даже
+                тем, кто
+                не раз посещал Океанариум, всегда есть на что посмотреть. Каждый посетитель может не только погрузиться
+                в атмосферу подводного мира, но и стать зрителем интересных показательных кормлений, которые проходят
+                каждый день по расписанию.</p>
+        </div>
+    </div>
+
+    <h1 class="about__title-plan">План Океанариума</h1>
+    <div class="about__section">
+        <div class="container">
+            <img src="images/about/plan.webp" class="about__plan" alt="План" width="928" height="1308">
+        </div>
+    </div>
+<div class="container">
+        <h1 class="about__title">Отзывы</h1>
+        <div class="about__reviews">
+            <div class="review-header">
+                <span class="review-author">Юлия<img src="images/about/star.webp" class="reviews-star" alt="Оценка" width="281"
+                        height="40"></span>
+                <span class="review-date">25 февраля 2025</span>
+            </div>
+            <div class="review-content">
+                <p>Здравствуйте! Были сегодня в Океанариуме. Я уже в который раз - и не перестаю восхищаться! Хотела
+                    подарить и своему молодому человеку впечатления - и получилось: он тоже был в восторге! Спасибо за
+                    ваши скидки в День Рождения!</p>
+                <p>Также хотелось бы сказать добрые слова в адрес нашего экскурсовода, которая проводила нам программу
+                    "Самцы-молодцы" - она мастер своего дела, отличный гид, очень интересно рассказывает, знает много
+                    подробностей, отвечает на все вопросы, и с ней было невероятно приятно общаться.</p>
+                <p>С радостью будем рекомендовать ее как специалиста, а также посещение вашего Океанариума всем друзьям
+                    и знакомым! Сейчас в СПб не так много мест, выходя из которых остаешься довольным и счастливым!
+                    Спасибо за радость и праздничные воспоминания!</p>
+            </div>
+        </div>
+        <div class="about__reviews">
+            <div class="review-header">
+                <span class="review-author">Елизавета
+                    <img src="images/about/star.webp" class="reviews-star" alt="Оценка" width="281" height="40" ></span>
+                <span class="review-date">9 января 2025</span>
+            </div>
+            <div class="review-content">
+                <p>Посетили океанариум всей семьёй и остались в полном восторге! Особенно понравился подводный туннель —
+                    ощущение, будто гуляешь по дну океана. Очень понравилось, как сотрудники рассказывают о животных.
+                    Чисто, красиво, интересно — рекомендуем!
+                </p>
+            </div>
+        </div>
+        <div class="about__reviews">
+            <div class="review-header">
+                <span class="review-author">Павел
+                    <img src="images/about/star.webp" class="reviews-star" alt="Оценка" width="281" height="40"></span>
+                <span class="review-date">15 сентября 2024</span>
+            </div>
+            <div class="review-content">
+                <p>Отличное место для семейного похода. Особенно для юных натуралистов. Очень много видов морских
+                    обитателей, начиная от маленьких экзотических рыбок и заканчивая акулами и тюленями. А аквариум с
+                    медузами это просто сказка.
+                </p>
+            </div>
+        </div>
+        <div class="about__reviews">
+            <div class="review-header">
+                <span class="review-author">Аркадий
+                    <img src="images/about/star.webp" class="reviews-star" alt="Оценка" width="281" height="40"></span>
+                <span class="review-date">28 сентября 2024</span>
+            </div>
+            <div class="review-content">
+                <p>Невероятное место! Огромное разнообразие морских существ, отличная организация пространства и
+                    дружелюбный персонал. Понравилась зона с пингвинами — просто завораживающее зрелище. Отличное место
+                    для фото и познавательного отдыха.
+                </p>
+            </div>
+        </div>
+    </div>
+<div class="container">
+        <section class="feedback-form">
+            <form id="feedbackForm">
+                <div class="row">
+                    <input type="text" name="name" placeholder="Имя" required>
+                    <input type="email" name="email" placeholder="E-mail" required>
+                </div>
+                <textarea name="message" placeholder="Сообщение" required></textarea>
+                <label>Защита от автоматических сообщений</label>
+                <div class="captcha">
+                    <img src="images/about/captcha.webp" alt="captcha">
+                    <input type="text" id="captchaInput" placeholder="Введите слово на картинке" required>
+                </div>
+                <div id="error" style="color: #ffdddd; display: none;">Неверное слово. Попробуйте снова.</div>
+                <div class="rating">
+                    <span>★★★★★</span>
+                </div>
+                <button type="submit">Отправить отзыв</button>
+            </form>
+        </section>
+    </div>
+
+    <footer style="background: linear-gradient(135deg, #1359a3fc, #021724);">
+        <div class="footer-container">
+            <div class="footer-nav">
+                <a href="index.html">Главная</a>
+                <a href="about.html">О нас</a>
+                <a href="news.html">Новости</a>
+                <a href="place.html">Как нас найти</a>
+                <a href="price.html">Цены и расписание</a>
+            </div>
+            <img src="images/components/logo-cb.svg" alt="logo-cb">
+            <div class="footer-contacts">
+                <p>Контактная информация:</p>
+                <p>8-800-555-35-35</p>
+                <p>8-918-962-62-63</p>
+                <div class="social__links">
+                    <img src="images/components/tg.svg" alt="tg" width="104" height="71">
+                    <img src="images/components/vk.svg" alt="vk" width="71" height="71">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
+<script src="js/index.js"></script>
+
+
+<script>
+    document.getElementById('feedbackForm').addEventListener('submit', function (e) {
+        e.preventDefault(); // Остановить стандартную отправку формы
+
+        const captchaInput = document.getElementById('captchaInput').value.trim();
+        const error = document.getElementById('error');
+
+        if (captchaInput !== 'TM6yF') {
+            error.style.display = 'block';
+            return;
+        } else {
+            error.style.display = 'none';
+        }
+
+        if (confirm('Подтвердить действие?')) {
+            location.reload(); // Перезагрузка страницы
+        }
+    });
+</script>

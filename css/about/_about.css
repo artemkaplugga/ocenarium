@@ -1,0 +1,128 @@
+.about__title {
+    display: flex;
+    justify-content: center;
+    font-size: 48px;
+    font-weight: 400;
+    margin: 30px 0;
+}
+
+.about__text {
+    font-size: 24px;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.about__video {
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+
+.about__image {
+    object-fit: cover;
+}
+
+.about__images {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin: 50px 0;
+}
+
+@media (max-width:1504px) {
+    .about__video {
+        justify-content: center;
+    }
+
+    @media (max-width:1582px) {
+        .about__video {
+            margin-bottom: 50px;
+            justify-content: center;
+            width: 100%;
+        }
+
+        @media (max-width:1186px) {
+            .about__images {
+                gap: 50px;
+            }
+
+            .about__image {
+                width: 270px;
+                height: 242px;
+            }
+        }
+
+        @media (max-width:1010px) {
+            .about__image {
+                width: 240px;
+                height: 212px;
+            }
+
+            .about__images {
+                gap: 30px;
+            }
+        }
+
+        @media (max-width:843px) {
+            .about__image {
+                width: 200px;
+                height: 172px;
+            }
+
+            .about__text {
+                font-size: 22px;
+            }
+
+            .about__title {
+                font-size: 45px;
+            }
+        }
+
+        @media (max-width:700px) {
+            .about__image {
+                width: 158px;
+                height: 140px;
+            }
+
+            .about__text {
+                font-size: 21px;
+                margin-bottom: 30px;
+            }
+        }
+
+        @media (max-width:555px) {
+            .about__image {
+                width: 125px;
+                height: 115px;
+            }
+
+            .about__text {
+                font-size: 18px;
+            }
+
+            .about__title {
+                font-size: 40px;
+            }
+        }
+
+        @media (max-width:470px) {
+            .about__image {
+                width: 100px;
+                height: 90px;
+            }
+
+            .about__images {
+                margin: 30px 0;
+                gap: 20px;
+            }
+
+            .about__text {
+                font-size: 16px;
+            }
+
+            .about__title {
+                font-size: 35px;
+            }
+        }
+    }
+}

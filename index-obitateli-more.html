@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oceanarium</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="hero">
+        <div class="container">
+            <div class="nav">
+                <ul class="nav-links">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                </ul>
+                <a href="index.html">
+                    <img src="images/components/2d-logo.svg" alt="AQUAFORM" class="logo">
+                  </a>
+                <ul class="nav-links">
+                    <li><a href="price.html">Цены и расписания</a></li>
+                    <li><a href="place.html">Как нас найти</a></li>
+                </ul>
+                <div class="burger" id="burger">&#9776;</div>
+            </div>
+
+            <div class="hero-content">
+                <h1>AQUAFORM</h1>
+                <button class="cta-btn">КУПИТЬ БИЛЕТ</button>
+            </div>
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-header">
+                <img src="images/components/2d-logo.svg" alt="AQUAFORM" class="logo" width="110">
+                <div class="close-btn" id="closeBtn">&times;</div>
+            </div>
+            <div class="mobile-menu-links">
+                <a href="index.html">Главная</a>
+                <a href="about.html">О нас</a>
+                <a href="news.html">Новости</a>
+                <a href="price.html">Цены и расписания</a>
+                <a href="place.html">Как нас найти</a>
+            </div>
+        </div>
+    </header>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <svg class="close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30">
+                <path d="M18 6L6 18M6 6l12 12" stroke="white" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+            <h2>Оформить покупку билета</h2>
+            <p>Позвоните или оставьте номер, мы вам перезвоним: 8-800-555-35-35 или 8-918-962-62-63</p>
+            <form id="contactForm">
+                <input type="text" placeholder="Ваше имя*" required><br>
+                <input type="tel" placeholder="Контактный телефон*" required><br>
+                <div class="form-footer">
+                    <button type="submit">Отправить</button>
+                    <label class="custom-checkbox">
+                        <input type="checkbox" id="robotCheckbox">
+                        <span class="checkmark"></span>
+                        Я не робот
+                    </label>
+                </div>
+                <p id="checkboxError">Пожалуйста, подтвердите, что вы не робот</p>
+            </form>
+        </div>
+    </div>
+<div class="container">
+        <h1 class="obitateli-more_title">Рыбка-крылатка</h1>
+        <div class="obitateli__inner">
+            <img src="images/index/lionfish.webp" alt="Рыбка крылатка" width="546" height="464">
+            <p>Крылатка-зебра (лат. Pterois volitans) — вид лучепёрых рыб <br> семейства скорпеновых.<br>
+                Это хищные рыбы, которые могут легко проглатывать рыб длиной <br>до двух третей собственной. Окраска
+                тела
+                красная с <br> многочисленными светлыми полосками. Грудные плавники <br>большие. Масса тела достигает 1
+                кг.<br>
+                Крылатка имеет длинные ленты спинных и грудных плавников, в<br> которых находятся острые ядовитые иглы.
+                Укол
+                колючками этой <br>рыбы очень болезнен. Яд вызывает судороги и паралич. На месте <br>прокола возникает
+                некроз
+                или сепсис.<br>
+                Встречается в тропических водах Индийского и Тихого океанов — у <br>берегов Китая, Японии и Австралии.
+                Широко распространена в <br>Красном море у берегов Египта.</p>
+        </div>
+        <div class="obitateli-more-btn">
+            <a href="index.html"class="obitateli-btn">Назад</a>
+        </div>
+    </div>
+
+    <footer style="background: linear-gradient(135deg, #1359a3fc, #021724);">
+        <div class="footer-container">
+            <div class="footer-nav">
+                <a href="index.html">Главная</a>
+                <a href="about.html">О нас</a>
+                <a href="news.html">Новости</a>
+                <a href="place.html">Как нас найти</a>
+                <a href="price.html">Цены и расписание</a>
+            </div>
+            <img src="images/components/logo-cb.svg" alt="logo-cb">
+            <div class="footer-contacts">
+                <p>Контактная информация:</p>
+                <p>8-800-555-35-35</p>
+                <p>8-918-962-62-63</p>
+                <div class="social__links">
+                    <img src="images/components/tg.svg" alt="tg" width="104" height="71">
+                    <img src="images/components/vk.svg" alt="vk" width="71" height="71">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
+<script src="js/index.js"></script>

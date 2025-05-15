@@ -1,0 +1,278 @@
+.creatures {
+    padding: 40px 20px;
+    background: #00364e;
+    background-image: url(../images/index/obitateli.webp);
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.creatures h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 64px;
+}
+
+.creatures p {
+    font-size: 32px;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.creatures-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+}
+
+.creature-item {
+    width: 160px;
+    text-align: center;
+    flex-direction: column;
+}
+
+.creature-item img {
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.obitateli-more_title {
+    font-size: 48px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 20px 0;
+}
+
+.obitateli__inner {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.obitateli__inner p {
+    font-size: 24px;
+}
+
+.obitateli-more-btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.obitateli-btn {
+    font-size: 36px;
+    background-color: rgba(49, 153, 197, 80%);
+    color: white;
+    border: none;
+    border-radius: 60px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 300px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+@media (max-width:1279px){
+    .creatures-grid {
+        gap: 80px;
+    }
+}
+
+@media (max-width:1210px) {
+    .obitateli__inner p {
+        font-size: 22px;
+    }
+
+    .obitateli__inner img {
+        height: 418px;
+        width: 500px;
+    }
+}
+
+@media (max-width:1199px) {
+    .creatures-grid {
+        gap: 50px;
+    }
+
+    .obitateli-btn {
+        width: 250px;
+        height: 80px;
+    }
+}
+
+@media (max-width:1079px) {
+    .creatures-grid {
+        gap: 35px;
+    }
+
+    .creatures p {
+        font-size: 30px;
+    }
+
+    .creature-item img {
+        width: 140px;
+        height: 175px;
+    }
+
+    .creatures-grid {
+        gap: 15px;
+    }
+}
+
+@media (max-width:1040px) {
+    .obitateli__inner img {
+        height: 369px;
+        width: 450px;
+    }
+
+    .obitateli__inner p {
+        font-size: 20px;
+    }
+
+    .obitateli__inner {
+        gap: 30px;
+    }
+}
+
+@media (max-width:939px) {
+    .creatures-grid {
+        gap: 0;
+    }
+
+    .creatures p {
+        font-size: 27px;
+    }
+}
+
+@media (max-width:930px) {
+    .obitateli__inner p {
+        font-size: 18px;
+    }
+
+    .obitateli__inner img {
+        height: 300px;
+        width: 381px;
+    }
+
+    .obitateli-btn {
+        width: 200px;
+        height: 60px;
+        font-size: 30px;
+    }
+}
+
+@media (max-width:879px) {
+    .creature-item {
+        width: 135px;
+    }
+
+    .creatures p {
+        font-size: 25px;
+    }
+
+    .creature-item img {
+        width: 120px;
+        height: 155px;
+    }
+}
+
+@media (max-width:768px) {
+    .obitateli__inner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width:754px) {
+    .creatures-grid {
+        gap: 25px;
+    }
+
+    .creature-item img {
+        width: 140px;
+        height: 175px;
+    }
+
+    .creature-item {
+        width: 160px;
+    }
+}
+
+@media (max-width:609px) {
+    .creature-item {
+        width: 140px;
+    }
+
+    .creatures-grid {
+        gap: 15px;
+    }
+}
+
+@media (max-width:525px) {
+    .creature-item img {
+        width: 170px;
+        height: 205px;
+    }
+
+    .creature-item {
+        width: 170px;
+    }
+}
+
+@media (max-width:434px) {
+    .creature-item img {
+        border-radius: 70px;
+    }
+
+    .creature-item img {
+        width: 210px;
+        height: 245px;
+    }
+    .creature-item {
+        width: 210px;
+    }
+}
+
+@media (max-width:513px) {
+    .obitateli__inner p {
+        font-size: 16px;
+    }
+    .creatures p {
+        font-size: 23px;
+    }
+
+    .creatures h2 {
+        font-size: 49px;
+    }
+}
+
+@media (max-width:457px) {
+    .obitateli__inner p {
+        font-size: 14px;
+    }
+
+    .obitateli__inner img {
+        height: 250px;
+        width: 331px;
+    }
+
+    .obitateli-more_title {
+        font-size: 42px;
+    }
+    .creatures p {
+        font-size: 21px;
+    }
+
+    .creatures h2 {
+        font-size: 44px;
+    }
+}
