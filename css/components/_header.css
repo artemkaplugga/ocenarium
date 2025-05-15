@@ -1,6 +1,6 @@
 .hero {
-  background: url(../images/index/fon.webp) center/cover no-repeat;
-  background-image: url(/images/index/fon.webp);
+  background: url(../../images/index/fon.webp) center/cover no-repeat;
+  background-image: url(../../images/index/fon.webp);
   text-align: center;
   color: white;
   position: relative;
