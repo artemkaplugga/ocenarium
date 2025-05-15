@@ -1,72 +1,70 @@
 document.addEventListener('DOMContentLoaded', function() {
     const swiper = new Swiper('.swiper-container', {
-   
-      slidesPerView: 1,
-      spaceBetween: 20,
-      loop: true, 
-      centeredSlides: false,
-      watchOverflow: true, 
-
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-        disabledClass: 'swiper-button-disabled' 
-      },
- 
-      pagination: {
-        el: '.swiper-pagination',
-        type: 'bullets',
-        clickable: true,
-        bulletClass: 'swiper-pagination-bullet',
-        bulletActiveClass: 'swiper-pagination-bullet-active'
-      },
-      
- 
-      breakpoints: {
-      
-        576: {
-          slidesPerView: 1.5,
-          spaceBetween: 20
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        centeredSlides: false,
+        watchOverflow: true,
+        speed: 800,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true
         },
-     
-        768: {
-          slidesPerView: 2,
-          spaceBetween: 20
-        },
-   
-        992: {
-          slidesPerView: 3,
-          spaceBetween: 20
-        },
- 
-        1200: {
-          slidesPerView: 3,
-          spaceBetween: 30
+        effect: 'slide',
+        grabCursor: true,
+        keyboard: {
+            enabled: true,
+            onlyInViewport: true
         },
 
-        375: {
-            slidesPerView: 1,
-            spaceBetween: 10
-        }
-      },
-      
-    
-      on: {
-        init: function() {
-          console.log('Swiper initialized');
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            disabledClass: 'swiper-button-disabled'
         },
-        slideChange: function() {
-          console.log('Slide changed to: ', this.activeIndex);
+
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: true,
+            bulletClass: 'swiper-pagination-bullet',
+            bulletActiveClass: 'swiper-pagination-bullet-active'
+        },
+
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 20
+            },
+            576: {
+                slidesPerView: 1.5,
+                spaceBetween: 20
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 30
+            },
+            992: {
+                slidesPerView: 2.5,
+                spaceBetween: 30
+            },
+            1200: {
+                slidesPerView: 3,
+                spaceBetween: 30
+            }
+        },
+
+        on: {
+            init: function() {
+                console.log('Swiper initialized');
+            },
+            slideChange: function() {
+                console.log('Slide changed to: ', this.activeIndex);
+            }
         }
-      }
     });
-  });
-
-
-
-
-
-
+});
 
 document.addEventListener("DOMContentLoaded", function () {
     const burger = document.getElementById("burger");
